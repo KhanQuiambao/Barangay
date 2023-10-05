@@ -1,0 +1,91 @@
+.loginPage {
+    background: url('images/barangay.jpg');
+    background: linear-gradient(rgba(11, 11, 11, 0.5), rgba(10, 10, 10, 0.5)), url("images/barangay.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+}
+
+.loginForm {
+    background-color: rgba(1, 32, 93, 0.6);
+    color: white;
+    width: 25%;
+}
+
+.resident_image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.requester_image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.residentpage{
+    margin-right: 10rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .loginPage {
+        background-size: cover;
+    }
+    .loginForm {
+        width: 50%;
+    }
+    .admin{
+        width: 50%;
+    }
+    .resident{
+        width: 50%;
+    }
+    .residentpage{
+        margin-right: 10rem;
+    }
+
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+    
+    thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+    tr { border: 1px solid #ccc; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+    
+}
+
+
+@media screen and (max-width: 480px) {
+    .loginPage {
+        background-size: cover;
+    }
+    .loginForm {
+        width: 80%;
+    }
+    .residentpage{
+        margin-right: 2.5rem;
+    }
+
+}
+
